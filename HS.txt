@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="x-icon" href="logo.png">
+<title>Edugametional</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d1f1ff110d.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+<style>
+body {
+ background-color:#EEF3FD;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  background-color: #042763;
+ position: fixed;
+  top: 0;
+  width: 100%;
+font-family: 'Comfortaa', cursive;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+  font-size: 17px;
+margin-top: 20px;
+}
+
+.topnav a:hover {
+  background-color: #7F79D1;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #5148DF;
+  color: white;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+margin-top: 20px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 22px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#7F79D1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #7F79D1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+{
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 18%;
+  padding: 20px;
+  margin: 20px;
+margin-left: 3%;
+font-family: 'Comfortaa', cursive;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.font{
+font-family: 'Staatliches', cursive;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+padding: 10px;
+  font-size: 30px;
+  width: 60px;
+ text-align: center;
+  text-decoration: none;
+  margin: 2px 5px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+padding: 10px;
+  font-size: 30px;
+  width: 60px;
+ text-align: center;
+  text-decoration: none;
+  margin: 20px 7px;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+padding: 10px;
+  font-size: 30px;
+  width: 60px;
+   text-align: center;
+  text-decoration: none;
+  margin: 7px;
+}
+.footer {
+  padding: 1px;
+  background: #042763;
+font-family: 'Comfortaa', cursive;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a class="navbar-brand" href="#">
+<img src="logo.png" alt="Logo" style="width: 40px;"></a>
+  <a href="WEBSITE.html">Home</a>
+  <a href="CONTACT US.html">Contact Us</a>
+  <a href="ABOUT US.html">About Us</a>
+<a href="PREVIEW.html">Preview</a>
+ <div class="dropdown">
+    <button class="dropbtn">Categories 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="K-ELEM.html">Kinder/Elementary</a>
+      <a class="active" href="HS.html">High School</a>
+      <a href="ENTERTAINMENT.html">Entertainment</a>
+    </div>
+  </div> 
+</div>
+
+</br>
+</br>
+</br>
+</br>
+
+<div class="font">
+<center><font color="#1D4F44" size="70"><center><h1> JHS-SHS SECTION</h1></center></font>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#7ED6B9 ;">
+ <a href="https://kahoot.it "><img src="K.png" style="width:100%"></a>
+    <div class="card">
+<h1>Kahoot</h1>
+        <h2>Kahoot is an online learning platform designed as a game for learners to engage in fun while also learning things along the way.</h2>
+<br>
+<br>
+<br>
+</div>
+  </div>
+
+  <div class="column" style="background-color:#7ED6B9 ;">
+ <a href="https://education.minecraft.net/en-us/get-started/download 
+"><img src="ME.jpg" style="width:100%"></a>
+    <div class="card">
+<h1>Minecraft edu</h1>
+        <h2>Learn about math, coding, chemistry, and more while playing a well loved game by the world with minecraft education. This differs from the actual minecraft game as this is used specifically for classroom use.</h2>
+<br>
+<br>
+</div>
+  </div>
+
+  <div class="column" style="background-color:#7ED6B9 ;">
+<a href="https://www.geoguessr.com "><img src="GEO.jpg" style="width:100%"></a>
+    <div class="card">
+<h1>Geoguessr</h1>
+        <h2>Geoguessr takes you on a journey as you look for countries with only the use of your surroundings. learn more about the world while also having fun with different modes to try ingame.</h2>
+</div>
+  </div>
+
+  <div class="column" style="background-color:#7ED6B9 ;">
+<a href="https://www.cellsalive.com "><img src="CA.jpg" style="width:100%"></a>
+    <div class="card">
+<h1>Cells Alive</h1>
+        <h2>Cells alive consist of minigames, quizzes, and information all about cells, microbes and the immune system. The topics have their respective game or quiz to test your knowledge while also keeping engagement.
+</h2>
+<br>
+<br>
+<br>
+<br>
+</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#7ED6B9;">
+<a href="https://littlealchemy.com "><img src="LA.png" style="width:100%"></a>
+    <div class="card">
+<h1>Little Alchemy</h1>
+        <h2>Little alchemy is a game of trial and error. starting with 4 basic materials (air, fire, earth, wind), combine elements and learn how things form.</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+  </div>
+
+  <div class="column" style="background-color:#7ED6B9;">
+<a href="https://ncase.me/polygons/ "><img src="POP.png" style="width:100%"></a>
+    <div class="card">
+<h1>Parable of the Polygons</h1>
+        <h2>Parable of the Polygons is an interactive and educational game all about dragging unhappy polygons into empty spaces until they are satisfied. This game teaches the player all about the impacts of bias in society and segregation, all put together in a simple puzzle game.</h2>
+<br>
+<br>
+</div>
+  </div>
+
+  <div class="column" style="background-color:#7ED6B9;">
+<a href="https://www.mathnook.com/math/boat-coordinate.html"><img src="BC.png" style="width:100%"></a>
+    <div class="card">
+<h1>Boat Coordinates </h1>
+        <h2>Boat Coordinates is all about controlling a boat via x,y coordinates. With this, you have to collect all that is in the map and race to the finish line before the timer stops. This game helps the player understand the placements of quadrants in a graph, and how it works overall.
+</h2>
+<br>
+<br>
+</div>
+  </div>
+
+  <div class="column" style="background-color:#7ED6B9;">
+<a href="https://www.mathplayground.com/algebraic_reasoning.html "><img src="AR.png" style="width:100%"></a>
+    <div class="card">
+<h1>Algebraic Reasoning : at the sweet shop</h1>
+        <h2>Algebraic Reasoning at the Sweet Shop is a puzzle game all about looking for missing values. Choose a number once you enter the Sweet Shop and find out the price of each candy in the shop. The numbers indicate the different kinds of levels in the game.
+</h2>
+</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#7ED6B9;">
+<a href="https://www.icivics.org/games "><img src="IC.png" style="width:100%"></a>
+    <div class="card">
+<h1>iCivics</h1>
+        <h2>iCivics is a game-based curriculum to teach students about social studies and the government system. Here you can find games about voting, law, citizenship, and more to choose from. </h2>
+</div>
+  </div>
+
+  <div class="column" style="background-color:#7ED6B9;">
+<a href="https://biomanbio.com/HTML5GamesandLabs/LifeChemgames/enzymatichtml5page.html "><img src="EN.jpg" style="width:100%"></a>
+    <div class="card">
+<h1>Enzymatic</h1>
+        <h2>Enzymatic has video games, virtual labs, and activities for people to gain knowledge about enzymes. Other than activities, Enzymatic explains its topic through visual aids that could help the player understand its concept more clearly.</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+  </div>
+</div>
+
+<div class="footer">
+<font size="4" color="white"><center><h1> Our Socials</h1></center></font>
+<center>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/edugametionalph" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+</center>
+<center>
+<font size="3" color="white"><h4><pre>Copyright © Edugametional Inc. All Rights Reserved</h4></font>
+<font size="3" color="white"><h4><pre>English (Philippines)</h4></font>
+</center>
+</div> 
+
+</body>
+</html>

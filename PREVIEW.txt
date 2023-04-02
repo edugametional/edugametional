@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="x-icon" href="logo.png">
+<title>Edugametional</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/d1f1ff110d.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+<meta name="description" content="Educational games recommendation">
+<meta name="keywords" content="Educational, Educational games, games, games for highschool students, games for elementary students, entertainment games, game recommendations">
+<style>
+body, html {
+ background-color:#EEF3FD;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  background-color: #042763 ;
+  position: fixed;
+  top: 0;
+  width: 100%;
+ z-index: 10;
+font-family: 'Comfortaa', cursive;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background:#78BCF8;
+  color: white;
+  font-size: 30px;
+}
+.topnav a {
+margin-top: 20px;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #7F79D1;
+  color: black;
+}
+.topnav a.active {
+  background-color: #5148DF;
+  color: white;
+}
+
+.dropdown {
+margin-top: 20px;
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 22px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#7F79D1;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #5148DF;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+  padding: 1px;
+  background: #042763;
+font-family: 'Comfortaa', cursive;
+}
+.home{
+margin: 100px;
+margin-top: 100px;
+font-family: 'Oswald', sans-serif;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+.column {
+  float: left;
+  padding: 10px;
+margin: 10px;
+
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  display: flex;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+padding: 10px;
+  font-size: 30px;
+  width: 60px;
+ text-align: center;
+  text-decoration: none;
+  margin: 2px 5px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+padding: 10px;
+  font-size: 30px;
+  width: 60px;
+ text-align: center;
+  text-decoration: none;
+  margin: 20px 7px;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+padding: 10px;
+  font-size: 30px;
+  width: 60px;
+   text-align: center;
+  text-decoration: none;
+  margin: 7px;
+}
+video{
+width: 80%;
+height: auto;
+margin-left: 10%;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a class="navbar-brand">
+<img src="logo.png" alt="Logo" style="width: 40px;"></a>
+  <a class="active" href="WEBSITE.html">Home</a>
+  <a href="CONTACT US.html">Contact Us</a>
+  <a href="ABOUT US.html">About Us</a>
+<a href="PREVIEW.html">Preview</a>
+<div class="dropdown">
+    <button class="dropbtn">Categories
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     <a href="K-ELEM.html">Kinder/Elementary</a>
+      <a href="HS.html">High School</a>
+      <a href="Entertainment.html">Entertainment</a>
+    </div>
+  </div>
+</div> 
+</div>
+
+<video width="400" controls>
+<source src="preview.mp4" type="video/mp4">
+<source src="preview.ogg" type="video/ogg">
+</video>
+
+
+<div class="footer">
+<font size="4" color="white"><center><h1> Our Socials</h1></center></font>
+<center>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/edugametionalph" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+</center>
+<center>
+<font size="3" color="white"><h4><pre>Copyright © Edugametional Inc. All Rights Reserved</h4></font>
+<font size="3" color="white"><h4><pre>English (Philippines)</h4></font>
+</center>
+</div> 
+</body>
+</html> 
