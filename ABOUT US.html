@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="x-icon" href="logo.png">
+<title>Edugametional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d1f1ff110d.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html{
+ background-color:#EEF3FD;
+  margin: 0;
+  height: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background:#307EB1  ;
+  color: white;
+  font-size: 30px;
+font-family: 'Comfortaa', cursive;
+}
+.topnav {
+  background-color: #042763;
+ position: fixed;
+  top: 0;
+  width: 100%;
+ z-index: 10;
+font-family: 'Comfortaa', cursive;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+  font-size: 17px;
+margin-top: 20px;
+}
+
+.topnav a:hover {
+  background-color: #7F79D1;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #5148DF;
+  color: white;
+}
+.dropdown {
+  float: left;
+z-index: 10;
+margin-top: 20px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 22px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #7F79D1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #5148DF;
+}
+
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("BG.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+margin-top: 32px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+.footer {
+  padding: 50px;
+  text-align: center;
+  background: #042763;
+font-family: 'Comfortaa', cursive;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+font-family: 'Comfortaa', cursive;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+padding: 10px;
+  font-size: 30px;
+  width: 60px;
+ text-align: center;
+  text-decoration: none;
+  margin: 20px 5px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+padding: 10px;
+  font-size: 30px;
+  width: 60px;
+ text-align: center;
+  text-decoration: none;
+  margin: 20px 7px;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+padding: 10px;
+  font-size: 30px;
+  width: 60px;
+   text-align: center;
+  text-decoration: none;
+  margin: 20px 7px;
+}
+.footer {
+  padding: 1px;
+  background: #042763;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a class="navbar-brand">
+<img src="logo.png" alt="Logo" style="width: 40px;"></a>
+  <a  href="WEBSITE.html">Home</a>
+  <a href="CONTACT US.html">Contact Us</a>
+  <a class="active" href="ABOUT US.html">About Us</a>
+<a href="PREVIEW.html">Preview</a>
+<div class="dropdown">
+    <button class="dropbtn">Categories
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="K-ELEM.html">Kinder/Elementary</a>
+      <a href="HS.html">High School</a>
+      <a href="Entertainment.html">Entertainment</a>
+    </div>
+  </div> 
+</div>
+
+</br>
+</br>
+</br>
+</br>
+<div class="hero-image">
+  <div class="hero-text">
+
+  </div>
+</div>
+<div class="header">
+       <center><b><h1><font size="30" color="white">WHAT ABOUT US?</h1></font></b></center>
+     <center><p><font size="6" color="white">We are students from Grade 10 at Holy Family School of QC, who aim to educate students who are finding easier ways to learn. Our project is to make a website containing the topic of our choice. While discussing what topic we were going to focus on, one of our members discussed that some students are having a hard time learning in a traditional way, teachers teaching in front and just giving out tests normally. In our generation today, online games are popular among students. With the help of online games through learning, they can cope up with a different style of learning. We came into the conclusion that we are focusing on this topic, as we can relate as well to this topic.</p></font></center>
+  </div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="MARY.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Mary Julliana Aguirre</h2>
+        <p class="title">Contributions:</p>
+        <p>Research, Ideas for concepts</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="STEPH.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Maria Stephanie Caraan</h2>
+        <p class="title">Contributions:</p>
+        <p> Ideas for concepts, Research</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="CHESKA.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Francesca Marileth Co</h2>
+        <p class="title">Contributions:</p>
+        <p>Ideas for concepts</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="BRIELLE.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Bernice Brielle De Leon</h2>
+        <p class="title">Contributions:</p>
+        <p>Coding, Ideas for the concepts, Research, Presenting
+</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="ELLE.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Abrielle Dytuco</h2>
+        <p class="title">Contributions:</p>
+        <p>Ideas for concepts</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="BIANCA.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Bianca Niane Liwag</h2>
+        <p class="title">Contributions:</p>
+        <p>Research,Ideas for concepts</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="MILCAH.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Denise Milcah Magisa</h2>
+        <p class="title">Contributions:</p>
+        <p>Presenting, Ideas for concepts</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="MOULINE.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Jelaena Mouline Manalaysay</h2>
+        <p class="title">Contributions:</p>
+        <p> Ideas for concepts, Presenting</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="MONIQUE.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Monique Felice Matignas</h2>
+        <p class="title">Contributions:</p>
+        <p>Coding, Designing, Ideas for concepts, Research
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="SAMM.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Samantha Nicole Melendres</h2>
+        <p class="title">Contributions:</p>
+        <p>Ideas for concepts, Designing, Research</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="SIR.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Fiona Erica Pellazar</h2>
+        <p class="title">Contributions:</p>
+        <p>Ideas for concepts,Research</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="EIRA.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Eira Anjela Pizarra</h2>
+        <p class="title">Contributions:</p>
+        <p>Research</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="SHERMAINE.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Ma. Shermaine Rhianne Siacon</h2>
+        <p class="title">Contributions:</p>
+        <p>Ideas for concepts, Research</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="SAMV.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Samantha Alexis Vicente</h2>
+        <p class="title">Contributions:</p>
+        <p>Rsearch, Designing, Ideas for concepts, Presenting</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="ZOE.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Zoe Katelyn Villariba</h2>
+        <p class="title">Contributions:</p>
+        <p>Ideas for concepts</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+ <div class="column">
+    <div class="card">
+      <img src="DANIELLA.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Daniella Louise Zalameda</h2>
+        <p class="title">Contributions:</p>
+        <p>Designing, Coding, Ideas for concepts</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+<font size="4" color="white"><center><h1> Our Socials</h1></center></font>
+<center>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/edugametionalph" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+</center>
+<font size="3" color="white"><h4><pre>Copyright © Edugametional Inc. All Rights Reserved</h4></font>
+<font size="3" color="white"><h4><pre>English (Philippines)</h4></font>
+</div> 
+</body>
+</html>
